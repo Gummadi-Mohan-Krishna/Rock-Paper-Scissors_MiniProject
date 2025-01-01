@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    user-select: none;
 }
-body {
+body{
         background-image: url("img/background.avif");
-        user-select: none;
-    }
+}
 .heading{
     background-color: #081b31;
     color: white;
