@@ -4,7 +4,8 @@
     text-align: center;
 }
 body{
-            background-image: url("img/background.avif");
+    background-image: url("img/background.avif");
+    user-select: none;
 }
 .heading{
     background-color: #081b31;
