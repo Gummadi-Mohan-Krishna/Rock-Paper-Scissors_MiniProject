@@ -24,18 +24,18 @@ const playGame=(userChoice)=>{
 }
 const gameResults=(userChoice,compChoice)=>{
     if(userChoice===compChoice){
-        msg.innerText="GAME DRAW!!!";
+        msg.innerText="GAME DRAW!!!COMPUTER ALSO CHOOSE "+userChoice;
         msg.style.backgroundColor = "#081b31";
     }
     else if(userChoice==="rock"){
         if(compChoice==="scissors"){
-            msg.innerText="YOU WON";
+            msg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice;
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST";
+            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
@@ -43,13 +43,13 @@ const gameResults=(userChoice,compChoice)=>{
     }
     else if(userChoice==="paper"){
         if(compChoice==="rock"){
-            msg.innerText="YOU WON";
+            msg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice;
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST";
+            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
@@ -57,13 +57,13 @@ const gameResults=(userChoice,compChoice)=>{
     }
     else{
         if(compChoice==="paper"){
-            msg.innerText="YOU WON";
+            mmsg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice;
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST";
+            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
