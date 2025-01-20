@@ -24,18 +24,18 @@ const playGame=(userChoice)=>{
 }
 const gameResults=(userChoice,compChoice)=>{
     if(userChoice===compChoice){
-        msg.innerText="GAME DRAW!!!COMPUTER ALSO CHOOSE "+userChoice;
+        msg.innerText="GAME DRAW!!!COMPUTER ALSO CHOOSE "+userChoice.toUpper();
         msg.style.backgroundColor = "#081b31";
     }
     else if(userChoice==="rock"){
         if(compChoice==="scissors"){
-            msg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice;
+            msg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice.toUpper();
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice.toUpper();
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
@@ -43,13 +43,13 @@ const gameResults=(userChoice,compChoice)=>{
     }
     else if(userChoice==="paper"){
         if(compChoice==="rock"){
-            msg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice;
+            msg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice.toUpper();
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice.toUpper();
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
@@ -57,13 +57,13 @@ const gameResults=(userChoice,compChoice)=>{
     }
     else{
         if(compChoice==="paper"){
-            mmsg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice;
+            mmsg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice.toUpper();
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice.toUpper();
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
