@@ -31,16 +31,14 @@ const gameResults=(userChoice,compChoice)=>{
     else if(userChoice==="rock"){
         if(compChoice==="scissors"){
             let dumy="YOU WON!!!COMPUTER CHOOSE "+compChoice;
-            dumy=dumy.toUpperCase();
-            msg.innerText=dumy;
+            msg.innerText=dumy.toUpperCase();
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
             let dumy="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
-            dumy=dumy.toUpperCase();
-            msg.innerText=dumy;
+            msg.innerText=dumy.toUpperCase();
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
@@ -49,16 +47,14 @@ const gameResults=(userChoice,compChoice)=>{
     else if(userChoice==="paper"){
         if(compChoice==="rock"){
             let dumy="YOU WON!!!COMPUTER CHOOSE "+compChoice;
-            dumy=dumy.toUpperCase();
-            msg.innerText=dumy;
+            msg.innerText=dumy.toUpperCase();
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
            let dumy="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
-            dumy=dumy.toUpperCase();
-            msg.innerText=dumy;
+            msg.innerText=dumy.toUpperCase();
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
@@ -67,15 +63,13 @@ const gameResults=(userChoice,compChoice)=>{
     else{
         if(compChoice==="paper"){
             let dumy="YOU WON!!!COMPUTER CHOOSE "+compChoice;
-            dumy=dumy.toUpperCase();
-            msg.innerText=dumy;
+            msg.innerText=dumy.toUpperCase();
             us++;
             userScore.innerText=us;
         }
         else{
             let dumy="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
-            dumy=dumy.toUpperCase();
-            msg.innerText=dumy;
+            msg.innerText=dumy.toUpperCase();
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
