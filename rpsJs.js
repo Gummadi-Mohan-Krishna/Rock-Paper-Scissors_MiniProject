@@ -63,8 +63,8 @@ const gameResults=(userChoice,compChoice)=>{
     }
     else{
         if(compChoice==="paper"){
-            dumy="YOU WON!!!COMPUTER CHOOSE "+compChoice;
-            msg.innerText=dumy.toUpperCase();
+            dumy = "YOU WON!!! COMPUTER CHOSE " + compChoice;
+            msg.innerText = dumy.toUpperCase();
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
