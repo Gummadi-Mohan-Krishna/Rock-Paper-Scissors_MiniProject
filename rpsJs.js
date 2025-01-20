@@ -25,8 +25,7 @@ const playGame=(userChoice)=>{
 const gameResults=(userChoice,compChoice)=>{
     if(userChoice===compChoice){
         let dumy="GAME DRAW!!!COMPUTER ALSO CHOOSE "+userChoice;
-        dumy=dumy.toUpperCase();
-        msg.innerText=dumy;
+        msg.innerText=dumy.toUpperCase();
         msg.style.backgroundColor = "#081b31";
     }
     else if(userChoice==="rock"){
@@ -39,7 +38,9 @@ const gameResults=(userChoice,compChoice)=>{
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+            let dumy="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+            dumy=dumy.toUpperCase();
+            msg.innerText=dumy;
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
@@ -47,13 +48,17 @@ const gameResults=(userChoice,compChoice)=>{
     }
     else if(userChoice==="paper"){
         if(compChoice==="rock"){
-            msg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice;
+            let dumy="YOU WON!!!COMPUTER CHOOSE "+compChoice;
+            dumy=dumy.toUpperCase();
+            msg.innerText=dumy;
             msg.style.backgroundColor = "green";
             us++;
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+           let dumy="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+            dumy=dumy.toUpperCase();
+            msg.innerText=dumy;
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
@@ -61,13 +66,16 @@ const gameResults=(userChoice,compChoice)=>{
     }
     else{
         if(compChoice==="paper"){
-            mmsg.innerText="YOU WON!!!COMPUTER CHOOSE "+compChoice;
-            msg.style.backgroundColor = "green";
+            let dumy="YOU WON!!!COMPUTER CHOOSE "+compChoice;
+            dumy=dumy.toUpperCase();
+            msg.innerText=dumy;
             us++;
             userScore.innerText=us;
         }
         else{
-            msg.innerText="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+            let dumy="YOU LOST!!!COMPUTER CHOOSE "+compChoice;
+            dumy=dumy.toUpperCase();
+            msg.innerText=dumy;
             msg.style.backgroundColor = "red";
             cs++;
             compScore.innerText=cs;
