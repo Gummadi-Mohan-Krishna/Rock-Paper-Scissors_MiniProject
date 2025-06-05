@@ -14,7 +14,7 @@ choices.forEach(choice => {
 
 const compSelection=()=>{
     obj=["rock","paper","scissors"];
-    ind=Math.floor(Math.random()*3);
+    ind=Math.floor(Math.random()*3); 
     return obj[ind];
 }
 
